@@ -115,18 +115,17 @@
 							<goal>schema</goal>
 						</goals>
 						<configuration>
-							<sourceDirectory>src/main/resources/com.example.avro</sourceDirectory>
+							<sourceDirectory>src/main/resources/com.example.avro/</sourceDirectory>
 							<includes>
 								<include>Record.avsc</include>
 							</includes>
 							<outputDirectory>${project.build.directory}/generated-sources</outputDirectory>
-							<stringType>String</stringType>
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
 
-<!--			<plugin>
+			<plugin>
 				<groupId>io.confluent</groupId>
 				<artifactId>kafka-schema-registry-maven-plugin</artifactId>
 				<version>${io.confluent.schema-registry.version}</version>
@@ -143,7 +142,7 @@
 				<goals>
 					<goal>test-compatibility</goal>
 				</goals>
-			</plugin>-->
+			</plugin>
 
 		</plugins>
 	</build>

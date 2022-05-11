@@ -1,7 +1,7 @@
 package com.example.workWithAPI.config;
 
 
-import com.example.workWithAPI.Record;
+import com.example.Record;
 import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import java.util.HashMap;
